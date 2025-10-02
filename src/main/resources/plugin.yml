@@ -1,0 +1,37 @@
+name: VansJoinAlert
+main: com.ivanech.vansjoinalert.VansJoinAlert
+version: 2.0.0-beta
+api-version: 1.16
+softdepend:
+  - PlaceholderAPI
+
+commands:
+  vj:
+    description: VansJoinAlert information
+    usage: /<command>
+    aliases: [vansjoin]
+    permission: ''
+  vansjoinalert:
+    description: VansJoinAlert admin commands
+    usage: /<command> [reload|help]
+    aliases: [vja]
+    permission: ''
+
+permissions:
+  vansjoin.alert:
+    description: Receive and trigger join alerts
+    default: false
+  vansjoinalert.reload:
+    description: Allows reloading the plugin configuration
+    default: op
+
+name: VansHide
+main: me.yourname.vanshide.VansHide
+version: 1.0.0
+api-version: 1.16
+permissions:
+  vanshide.bypass:
+    description: Allows player to bypass VansHide isolation
+    default: op
+
+
